@@ -14,10 +14,12 @@ const Calculator = () => {
     setState((state) => calculate(state, event.target.innerText));
   };
 
+  const { total, next } = state;
+  const display = next || total || '0';
   return (
     <section className="calculator">
       <div className="calculator-output">
-        <div className="calculator-screen">0</div>
+        <div className="calculator-screen">{display}</div>
       </div>
       <div className="Calculator-buttons">
         <div className="calculator-functions">
