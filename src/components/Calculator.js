@@ -28,7 +28,7 @@ const Calculator = () => {
           <button type="button" onClick={handleClick}>%</button>
         </div>
         <div className="calculator-operators">
-          <button type="button" onClick={handleClick}>/</button>
+          <button type="button" onClick={handleClick}>÷</button>
           <button type="button" onClick={handleClick}>x</button>
           <button type="button" onClick={handleClick}>-</button>
           <button type="button" onClick={handleClick}>+</button>
