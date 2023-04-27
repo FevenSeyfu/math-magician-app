@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  width: 20rem;
+  height: 25rem;
+  margin: 10% auto;
+}
+
+.calculator-output {
+  background-color: gray;
+  color: white;
+  text-align: end;
+  padding: 0.8rem 0.8rem;
+  font-size: 1rem;
+}
+
+.calculator-numbers {
+  grid-area: calculator-numbers;
+  direction: rtl;
+}
+
+.calculator-numbers .btn-zero {
+  width: 10rem;
+  text-align: left;
+  padding-left: 30%;
+}
+
+.calculator-functions {
+  grid-area: calculator-function;
+}
+
+.calculator-operators {
+  grid-area: calculator-operators;
+}
+
+.Calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 5rem);
+  grid-template-areas: "calculator-function calculator-function calculator-function calculator-operators" "calculator-numbers calculator-numbers calculator-numbers calculator-operators" "calculator-numbers calculator-numbers calculator-numbers calculator-operators" "calculator-numbers calculator-numbers calculator-numbers calculator-operators" "calculator-numbers calculator-numbers calculator-numbers calculator-operators";
+}
+
+button {
+  width: 5rem;
+  height: 5rem;
+  font-size: 1rem;
+  border: 1px solid gray;
+}
+
+.calculator-operators > button {
+  background-color: #ff9500;
+}
