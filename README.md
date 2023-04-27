@@ -13,7 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  <!-- - [🚀 Live Demo](#live-demo) -->
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -47,8 +47,8 @@
   </ul>
 </details>
 
-### project presentation
-- [Project presentation](link)
+<!-- ### project presentation
+- [Project presentation](link) -->
 
 <!-- Features -->
 
@@ -60,12 +60,12 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
+<!-- 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Project link.
 
-- [Live Demo](link)
+- [Live Demo](link) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
