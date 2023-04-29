@@ -36,6 +36,16 @@ const Quotes = () => {
   if (isLoading) {
     return <div>Please wait Loading quotes...</div>;
   }
+  return (
+    <div>
+      {quotes.map((quote) => (
+        <div className="quote-container" key={quote}>
+          <p className="quote-text"><q>{quote.quote}</q></p>
+          <p className="author">{quote.author}</p>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Quotes;
