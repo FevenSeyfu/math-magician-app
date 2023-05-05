@@ -9,13 +9,16 @@ import NotFound from './components/NotFound';
 function App() {
   return (
     <>
-      <nav className="NavBar">
-        <ul className="NavList">
-          <li className="NavItem"><Link to="/">Home</Link></li>
-          <li className="NavItem"><Link to="/calculator">calculator</Link></li>
-          <li className="NavItem"><Link to="/Quotes">Quotes</Link></li>
-        </ul>
-      </nav>
+      <div>
+        <nav className="NavBar">
+          <h1 className="main-header">Math Magician</h1>
+          <ul className="NavList">
+            <li className="NavItem"><Link className="NavLink" to="/">Home</Link></li>
+            <li className="NavItem"><Link className="NavLink" to="/calculator">calculator</Link></li>
+            <li className="NavItem"><Link className="NavLink" to="/Quotes">Quotes</Link></li>
+          </ul>
+        </nav>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/calculator" element={<Calculator />} />

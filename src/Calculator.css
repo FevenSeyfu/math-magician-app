@@ -82,10 +82,23 @@ button {
   color: black;
 }
 
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+.main-header {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  margin: 1%;
+}
+
 .NavList {
   display: flex;
   flex-direction: row;
-  justify-content: right;
   gap: 1rem;
   margin-right: 2rem;
 }
@@ -97,7 +110,29 @@ button {
   font-weight: 400;
 }
 
+.NavLink {
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  padding: 0.5rem;
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+/* style home page */
+
+.main-section {
+  margin: 5% 10rem;
+}
+
+.home-heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.home-text {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }

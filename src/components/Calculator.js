@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../Calculator.css';
 import calculate from '../logic/calculate';
-import Header from './Header';
 
 const Calculator = () => {
   const [state, setState] = useState({
@@ -18,7 +17,9 @@ const Calculator = () => {
   const display = next || total || '0';
   return (
     <>
-      <Header />
+      <section>
+        <h3>Let&apos;s do some math!</h3>
+      </section>
       <section className="calculator">
         <div className="calculator-output">
           <div className="calculator-screen">{display}</div>

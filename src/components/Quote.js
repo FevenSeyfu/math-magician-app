@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../Calculator.css';
-import Header from './Header';
 
 const Quotes = () => {
   const category = 'humor';
@@ -41,7 +40,6 @@ const Quotes = () => {
     <div>
       {quotes.map((quote) => (
         <>
-          <Header />
           <div className="quote-container" key={quote}>
             <p className="quote-text"><q>{quote.quote}</q></p>
             <p className="author">{quote.author}</p>
