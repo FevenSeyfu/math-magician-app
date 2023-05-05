@@ -73,3 +73,31 @@ button {
   font-size: 1rem;
   color: #333;
 }
+
+.Message-box {
+  margin: 3rem 40%;
+  font-family: cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+}
+
+.NavList {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+.NavItem {
+  list-style: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

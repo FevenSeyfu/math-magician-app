@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../Calculator.css';
+import Header from './Header';
 
 const Quotes = () => {
   const category = 'humor';
@@ -30,19 +31,22 @@ const Quotes = () => {
   }, [category]);
 
   if (hasError || quotes.length === 0) {
-    return <div>Oops!Something went wrong!</div>;
+    return <div className="Message-box">Please wait Loading quotes...</div>;
   }
 
   if (isLoading) {
-    return <div>Please wait Loading quotes...</div>;
+    return <div className="Message-box">Please wait Loading quotes...</div>;
   }
   return (
     <div>
       {quotes.map((quote) => (
-        <div className="quote-container" key={quote}>
-          <p className="quote-text"><q>{quote.quote}</q></p>
-          <p className="author">{quote.author}</p>
-        </div>
+        <>
+          <Header />
+          <div className="quote-container" key={quote}>
+            <p className="quote-text"><q>{quote.quote}</q></p>
+            <p className="author">{quote.author}</p>
+          </div>
+        </>
       ))}
     </div>
   );
