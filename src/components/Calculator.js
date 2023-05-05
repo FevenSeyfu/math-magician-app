@@ -16,11 +16,11 @@ const Calculator = () => {
   const { total, next } = state;
   const display = next || total || '0';
   return (
-    <>
-      <section>
+    <div className="calculator-container">
+      <section className="left-section">
         <h3>Let&apos;s do some math!</h3>
       </section>
-      <section className="calculator">
+      <section className="calculator right-section">
         <div className="calculator-output">
           <div className="calculator-screen">{display}</div>
         </div>
@@ -52,7 +52,7 @@ const Calculator = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 export default Calculator;

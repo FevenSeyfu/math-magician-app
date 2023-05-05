@@ -136,3 +136,13 @@ a {
   font-weight: 400;
   margin-bottom: 1rem;
 }
+
+/* style calculator page */
+.calculator-container {
+  margin: 5% 5rem;
+  display: flex;
+}
+
+.right-section {
+  margin-right: 30%;
+}
