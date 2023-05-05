@@ -30,11 +30,11 @@ const Quotes = () => {
   }, [category]);
 
   if (hasError || quotes.length === 0) {
-    return <div>Oops!Something went wrong!</div>;
+    return <div className="Message-box">Please wait Loading quotes...</div>;
   }
 
   if (isLoading) {
-    return <div>Please wait Loading quotes...</div>;
+    return <div className="Message-box">Please wait Loading quotes...</div>;
   }
   return (
     <div>
