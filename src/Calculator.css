@@ -144,5 +144,10 @@ a {
 }
 
 .right-section {
-  margin-right: 30%;
+  margin-right: 10%;
+}
+
+.calcultor-heading {
+  font-size: 3rem;
+  font-weight: 400;
 }
